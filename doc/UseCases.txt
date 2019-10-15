@@ -1,0 +1,45 @@
+1.
+	common case:
+		Name: Adding a new product into the system
+		Steps:
+							ACTOR					| 				SYSTEM
+			1. Choose "Add Product" on main screen	| 	 2.	Display "Add Product" screen
+			3. Input data then click "Add" button	|	 4. Display "Added Product Successfully" screen
+			5. Click on "ok" button					|	 6. Display "Add Product" screen
+	exception case:
+		Name: Adding a new product into the system with exception
+		Steps:
+							ACTOR					| 				SYSTEM
+			1. Choose "Add Product" on main screen	| 	 2.	Display "Add Product" screen
+			3. Input data then click "Add" button	|	 4. Display "Error Adding Product" screen
+			5. Click on "ok" button					|	 6. Display "Add Product" screen
+2.
+	common case:
+		Name: Adding a new customer into the system
+		Steps:
+							ACTOR					| 				SYSTEM
+			1. Choose "Add Customer" on main screen	| 	 2.	Display "Add Customer" screen
+			3. Input data then click "Add" button	|	 4. Display "Added Customer Successfully" screen
+			5. Click on "ok" button					|	 6. Display "Add Customer" screen
+	exception case:
+		Name: Adding a new customer into the system with exception
+		Steps:
+							ACTOR					| 				SYSTEM
+			1. Choose "Add Customer" on main screen	| 	 2.	Display "Add Customer" screen
+			3. Input data then click "Add" button	|	 4. Display "Error Adding Customer" screen
+			5. Click on "ok" button					|	 6. Display "Add Customer" screen
+3.
+	common case:
+		Name: Adding a new purchase into the system
+		Steps:
+							ACTOR					| 				SYSTEM
+			1. Choose "Add Purchase" on main screen	| 	 2.	Display "Add Purchase" screen
+			3. Input data then click "Add" button	|	 4. Display "Added Purchase Successfully" screen
+			5. Click on "ok" button					|	 6. Display "Add Purchase" screen
+	exception case:
+		Name: Adding a new purchase into the system with exception
+		Steps:
+							ACTOR					| 				SYSTEM
+			1. Choose "Add Purchase" on main screen	| 	 2.	Display "Add Purchase" screen
+			3. Input data then click "Add" button	|	 4. Display "Error Adding Purchase" screen
+			5. Click on "ok" button					|	 6. Display "Add Purchase" screen
