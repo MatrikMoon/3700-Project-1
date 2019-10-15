@@ -35,26 +35,25 @@ public class AddPurchaseUI {
                     break;
                 default:
                     JOptionPane.showMessageDialog(null, "Purchase added successfully! " + purchase);
-            }
+                    TXTReceiptBuilder builder = new TXTReceiptBuilder();
+                    builder.appendHeader("---THE STORE---");
+                    builder.appendCustomer(customer);
+                    builder.appendPurchase(purchase);
+                    builder.appendFooter("---THANK YOU FOR SHOPPING WITH THE STORE---");
+                    JOptionPane.showMessageDialog(null, builder.toString());
 
-            TXTReceiptBuilder builder = new TXTReceiptBuilder();
-            builder.appendHeader("---THE STORE---");
-            builder.appendCustomer(customer);
-            builder.appendPurchase(purchase);
-            builder.appendFooter("---THANK YOU FOR SHOPPING WITH THE STORE---");
-            JOptionPane.showMessageDialog(null, builder.toString());
+                    try {
+                        File file = new File("receipt-" + purchaseId.getText() + ".txt");
+                        file.createNewFile();
+                        FileWriter fw = new FileWriter(file);
+                        BufferedWriter writer = new BufferedWriter(fw);
+                        writer.write(builder.toString());
 
-            try {
-                File file = new File("receipt-" + purchaseId.getText() + ".txt");
-                file.createNewFile();
-                FileWriter fw = new FileWriter(file);
-                BufferedWriter writer = new BufferedWriter(fw);
-                writer.write(builder.toString());
-
-                writer.close();
-            }
-            catch (Exception e) {
-                e.printStackTrace();
+                        writer.close();
+                    }
+                    catch (Exception e) {
+                        e.printStackTrace();
+                    }
             }
         }
     }

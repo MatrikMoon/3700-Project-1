@@ -9,7 +9,7 @@ public class CustomerModel {
         sb.append(mCustomerID).append(",");
         sb.append("\"").append(mName).append("\"").append(",");
         sb.append("\"").append(mAddress).append("\",");
-        sb.append("\"").append(mPhone).append("\"").append(",");
+        sb.append("\"").append(mPhone).append("\"");
         sb.append(")");
         return sb.toString();
     }

@@ -12,9 +12,8 @@ public class PurchaseModel {
         sb.append(mQuantity).append(",");
         sb.append(mCost).append(",");
         sb.append(mTax).append(",");
-        sb.append(mTotal).append(",");
+        sb.append(mTotal);
         sb.append(")");
         return sb.toString();
     }
-
 }
